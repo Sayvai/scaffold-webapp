@@ -131,7 +131,7 @@ or
 clone via **ssh**:
 
 ```
-git clone ssh://git@github.com:Sayvai/scaffold-webapp.git
+git clone git@github.com:Sayvai/scaffold-webapp.git
 ```
 
 ## Install Local Project Dependencies
