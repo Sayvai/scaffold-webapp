@@ -36,6 +36,10 @@ To see the user-friendly coverage report, the project needs to be setup first (s
 
 **Note**: Coverage report is not written to when running unit tests in debug mode `gulp test --debug`
 
+Below is how the unit test coverage report would look when opened in a browser.
+
+![Unit Test Coverage Report](/../screenshots/screenshots/UnitTestCoverageReport.png?raw=true "Unit Test Coverage Report")
+
 ### JS Hint
 JS Hint is also included in this project for detect errors or potential errors with JavaScript code. This project uses the [gulp-jshint](https://www.npmjs.com/package/gulp-jshint) node module.
 
@@ -127,7 +131,7 @@ or
 clone via **ssh**:
 
 ```
-git clone ssh://git@github.com:Sayvai/scaffold-webapp.git
+git clone git@github.com:Sayvai/scaffold-webapp.git
 ```
 
 ## Install Local Project Dependencies
