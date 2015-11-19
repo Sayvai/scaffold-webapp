@@ -74,7 +74,7 @@ npm install -g karma-cli
 
 #### Not recommended to install the below modules globally
 
-Only install if karma complains it cannot find modules / plugin locally to project.
+Only install if karma complains it cannot find modules / plugins locally to project.
 
 Karma
 
@@ -119,7 +119,7 @@ In your terminal enter either of the following commands to clone this project. U
 clone via **http**:
 
 ```
-git clone http://
+git clone https://github.com/Sayvai/scaffold-webapp.git
 ```
 
 or
@@ -127,7 +127,7 @@ or
 clone via **ssh**:
 
 ```
-git clone ssh://
+git clone ssh://git@github.com:Sayvai/scaffold-webapp.git
 ```
 
 ## Install Local Project Dependencies
