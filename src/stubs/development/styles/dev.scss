@@ -1,0 +1,14 @@
+@import 'src/styles/foundation/_settings';
+@import 'src/styles/_appGlobals';
+
+body.development {
+	footer {
+		border-top: 1px solid $development;
+
+	    small {
+	    	.build-type-label {
+	    		color: $development;
+	    	}
+	    }
+	}
+}

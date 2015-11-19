@@ -1,0 +1,10 @@
+{
+    "environment": "production",
+    "paths": {
+        "input": {
+            "files": {
+				"index": "src/index.html"
+            }
+        }
+    }
+}

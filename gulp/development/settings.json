@@ -1,0 +1,20 @@
+{
+    "environment": "development",
+    "paths": {
+        "input": {
+            "files": {
+                "css": [
+                    "src/styles/**/*.scss",
+                    "src/stubs/development/styles/**/*.scss"
+                ],
+                "images": [
+                    "src/images/**/*.*",
+                    "src/stubs/development/images/**/*.*"
+                ],
+				"jsStubs": "src/stubs/development/js/**/*.js",
+                "jsonResourcesSettings": "src/resources/settings.json",
+                "jsonResourcesOverrideSettings": "src/stubs/development/resources/settings.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    // JSHint Configuration File (as on JSHint website)
+    // See http://jshint.com/docs/ for more details
+
+    
+    "validthis"     : true     // true: Tolerate using this in a non-constructor function }
+}

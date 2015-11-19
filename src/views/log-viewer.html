@@ -1,0 +1,26 @@
+<div id="log-viewer">
+	
+	<div class="grid-block">
+		<div class="medium-12 grid-content">
+			<h1>{{vm.title}}</h1>
+		</div>
+	</div>
+
+	<div class="grid-block small-up-1">
+		<div class="small-12 medium-8 grid-block">
+			<form>
+				<input type="text" placeholder="Filter logs.." ng-model="filterWords" ng-focus="true" />
+			</form>
+	    </div>
+		<div class="small-12 medium-4 grid-block">
+			<button class="large button refresh-button" ng-click="vm.getLogs()">Refresh Logs</button>
+		</div>
+	</div>
+
+	<div class="grid-block">
+		<div class="medium-12 grid-content logs">
+			<p ng-repeat="log in vm.logEntries | filter:filterWords">{{log.logged | date:'yyyy-MM-dd HH:mm:ss Z'}} - {{log.type}} : {{log.details }}</p>
+		</div>
+	</div>
+
+</div>

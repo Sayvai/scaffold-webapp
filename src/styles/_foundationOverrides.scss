@@ -1,0 +1,17 @@
+// Foundation overrides
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.row {
+	max-width: inherit;
+}
+
+.button {
+	&.micro {
+		padding: $button-mcr;
+		font-size: $button-font-tny;
+	}
+
+	&.no-margin {
+		margin: 0;
+	}
+}

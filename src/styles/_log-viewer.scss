@@ -1,0 +1,19 @@
+// View styles
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+#log-viewer {
+	form {
+		width: 100%;
+	}
+
+	button {
+		&.refresh-button {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	.logs {
+		margin: 1em 0 0;
+	}
+}

@@ -1,0 +1,32 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE generated files #
+#######################
+.classpath
+.project
+.settings
+.idea
+.metadata
+*.iml
+*.ipr
+
+# Dependencies files #
+######################
+node_modules/
+bower_components/
+
+# Compiled report files #
+#########################
+reports/
+
+# Compiled source files #
+#########################
+public/

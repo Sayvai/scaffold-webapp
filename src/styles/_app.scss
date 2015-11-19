@@ -1,0 +1,64 @@
+// Main index template styles
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+body {
+	font: 100% $body-font-family;
+	color: $body-font-color;
+	background-color: $body-bg;
+
+	.navigation {
+		width: 100%;
+
+		.title-bar {
+			background-color: $topbar-bg-color;
+			padding: 0 1em;
+			position: fixed;
+		    top: 0;
+		    width: 100%;
+		    z-index: 5;
+
+			h1 {
+				margin: 0;
+			}
+
+			a:link, a:active, a:visited {
+				color: $topbar-link-color;
+			}
+
+			a:hover {
+				color: $topbar-link-color-hover;
+			}
+		}
+	}
+
+	.content {
+		padding: 4.4em 1em 2em;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: $body-font-color;
+		}
+
+		p {
+			color: $aluminum;
+		}
+	}
+
+	footer {
+	    position: fixed;
+	    bottom: 0;
+	    left: 1%;
+	    background-color: $black;
+	    width: 98%;
+	    text-align: right;
+	    border-top: 1px solid $production;
+	    padding: 0 0 2px;
+
+	    small {
+	    	color: $base;
+
+	    	.build-type-label {
+	    		color: $production;
+	    	}
+	    }
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"appModuleName": "app",
+    "paths": {
+        "input": {
+            "dirs": {
+                "app": "src/"
+            },
+            "files": {
+                "js": [
+                    "src/js/**/*.js"
+                ],
+                "css": [
+                	"src/styles/**/*.scss"
+                ],
+                "images": [
+                	"src/images/**/*.*"
+                ],
+                "jsLibs": [
+                    "bower_components/angular/angular.min.js",
+                    "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+                    "bower_components/angular-animate/angular-animate.min.js",
+                    "bower_components/foundation-apps/dist/js/foundation-apps.min.js",
+                    "bower_components/foundation-apps/dist/js/foundation-apps-templates.min.js"
+                ],
+                "cssLibs": [
+					"bower_components/foundation-apps/scss/**/*.scss"
+				],
+				"views": [
+					"src/views/**/*.html"
+				],
+				"jsonResources": [
+					"src/resources/**/*.json",
+					"!src/resources/settings.json"
+				],
+				"jsonResourcesSettings": "src/resources/settings.json",
+				"index": "src/index.html"
+            }
+        },
+        "output": {
+            "dirs": {
+                "app": "public/",
+                "images": "public/images/"
+            },
+            "files": {
+                "js": "public/js/app.js",
+                "css": "public/styles/style.css",
+                "jsLibs": "public/js/libs/libs.js",
+                "cssLibs": "public/styles/libs/libs.css",
+                "views": "public/js/templates.js",
+                "index": "public/index.html",
+                "jsonResources": "public/resources/*.*",
+                "jsStubs": "public/js/app.stubs.js"
+            }
+        }
+    }
+}
