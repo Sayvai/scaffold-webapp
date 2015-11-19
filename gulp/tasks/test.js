@@ -2,8 +2,6 @@ var gulp = require('gulp');
 var path = require('path');
 var args = require('yargs').argv;
 var appRoot = require('app-root-path');
-var karmaServer = require('karma').Server;
-var shell = require('gulp-shell');
 var spawn = require('child_process').spawn;
 
 var debugMode = args.debug;
@@ -17,10 +15,6 @@ if (!!debugMode) {
 /**
  * Run test once and exit
  */
-
-/*gulp.task('test', shell.task([
-    'karma start ' + testConfigFileName
-], {ignoreErrors: true, stdio: 'inherit', cwd: appRoot}));*/
 
 gulp.task('test', function (callback) {
 	var ls = spawn('karma', ['start', testConfigFileName], {stdio: 'inherit',cwd: appRoot});

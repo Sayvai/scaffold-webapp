@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var path = require('path');
 var concat = require('gulp-concat');
-var wait = require('gulp-wait');
 
 // Task: html to js files
 gulp.task('build-html-index', function () {
