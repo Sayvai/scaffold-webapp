@@ -30,3 +30,7 @@ reports/
 # Compiled source files #
 #########################
 public/
+
+# Other files #
+#########################
+screenshots/
