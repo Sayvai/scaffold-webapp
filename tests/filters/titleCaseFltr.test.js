@@ -27,19 +27,19 @@ describe('titleCaseFltr -->', function() {
 
   describe('[2] with invalid inputs -->', function() {
     
-    it('[1.1] returns a false when passed false', function() {
+    it('[2.1] returns a false when passed false', function() {
       expect(filter(false)).toBe(false);
     });
 
-    it('[1.2] returns null when passed null', function() {
+    it('[2.2] returns null when passed null', function() {
       expect(filter(null)).toBe(null);
     });
 
-    it('[1.3] returns undefined when passed no value or object', function() {
+    it('[2.3] returns undefined when passed no value or object', function() {
       expect(filter()).not.toBeDefined();
     });
 
-    it('[1.4] returns same number when passed an number', function() {
+    it('[2.4] returns same number when passed an number', function() {
       expect(filter(1)).toBe(1);
     });
 
