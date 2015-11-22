@@ -1,16 +1,16 @@
 describe('titleCaseFltr -->', function() {
 
-  var $filter;
   var filter;
 
   beforeEach(module('app'));
 
   beforeEach(inject(function(_$filter_){
-    $filter = _$filter_;
+    var $filter = _$filter_;
+    filter = $filter('titleCase');
   }));
 
   beforeEach(function(){
-    filter = $filter('titleCase');
+    
   });
 
   describe('[1] with valid inputs -->', function() {

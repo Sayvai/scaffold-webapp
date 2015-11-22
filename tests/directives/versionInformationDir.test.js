@@ -72,8 +72,7 @@ describe('versionInformationDir -->', function() {
   }));
 
   beforeEach(function() {
-    // Bugfix workaround for unit tests as a result of including foundation.dynamicRouting modules
-    $httpBackend.whenGET(/home.html/).respond();
+    
   });
 
   it('[1.1] Replaces the element with the appropriate content', function() {
