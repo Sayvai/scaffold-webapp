@@ -14,7 +14,7 @@
 		<script src="js/templates.js"></script>
 		<script ng-if="!!appVm.jsStubsAvailable" src="js/app.stubs.js"></script>
 	</head>
-	<body ng-class="(appVm.environment !== 'production' ? appVm.environment : '')">
+	<body ng-class="(appVm.environment !== 'production' ? appVm.environment : '')" ng-if="!!appVm.configsLoaded">
 		<div id="navigation" class="navigation">
 			<div class="title-bar">
 				<span class="title left"><h1>Web App</h1></span>
@@ -22,10 +22,10 @@
 			</div>
 		</div>
 		<div class="grid-block vertical">
-			<div id="content" class="content" ng-if="!!appVm.configsLoaded" ui-view></div>
+			<div id="content" class="content" ui-view></div>
 		</div>
 		<footer class="right">
-			<small>Build: {{appVm.versionNumber}} - <span class="build-type-label">{{appVm.environment}}</span> <a class="button micro secondary no-margin" ui-sref="log-viewer">Logs</a></small>
+			<version-information></version-information>
 		</footer>
 	</body>
 </html>

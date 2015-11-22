@@ -12,7 +12,6 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
-
     // list of files / patterns to load in the browser
     files: [
         'tests/test.css',
@@ -25,7 +24,10 @@ module.exports = function(config) {
         'src/js/default.js',
         'src/js/controllers/**/*.js',
         'src/js/services/**/*.js',
-        'tests/**/*.js'
+        'src/js/directives/**/*.js',
+        'src/js/filters/**/*.js',
+        'tests/**/*.js',
+        'src/views/**/*.html',
     ],
 
 
@@ -37,11 +39,10 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        // source files, that you wanna generate coverage for 
-        // do not include tests or libraries 
-        // (these files will be instrumented by Istanbul) 
+        'src/views/**/*.html': ['ng-html2js'],
         'src/js/**/!(default).js': ['coverage']
     },
+
 
     // optionally, configure the reporter 
     coverageReporter: {
@@ -61,6 +62,33 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress', 'coverage'],
+
+
+    ngHtml2JsPreprocessor: {
+      // strip this from the file path
+      stripPrefix: 'src/views/',
+      //stripSuffix: '.ext',
+      // prepend this to the
+      //prependPrefix: 'served/',
+
+      // or define a custom transform function
+      // - cacheId returned is used to load template
+      //   module(cacheId) will return template at filepath
+      /*cacheIdFromPath: function(filepath) {
+        // example strips 'public/' from anywhere in the path
+        // module(app/templates/template.html) => app/public/templates/template.html
+        var cacheId = filepath.strip('public/', '');
+        return cacheId;
+      },*/
+
+      // - setting this option will create only a single module that contains templates
+      //   from all the files, so you can load them all with module('foo')
+      // - you may provide a function(htmlPath, originalPath) instead of a string
+      //   if you'd like to generate modules dynamically
+      //   htmlPath is a originalPath stripped and/or prepended
+      //   with all provided suffixes and prefixes
+      moduleName: 'templatesx'
+    },
 
 
     // web server port
